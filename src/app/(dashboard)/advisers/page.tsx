@@ -4,7 +4,6 @@ import FilterSection from '@/sections/advisers/FiltersSection'
 import InputSearchSection from '@/sections/advisers/InputSearchSection'
 import ListCardsAdvisersSection from '@/sections/advisers/ListCardsAdvisersSection'
 import { Button } from '@/components/ui/button'
-import type { Adviser } from '@/types/adviser'
 import { advisers } from '@/data/advisers'
 
 const AdviserPage = () => {

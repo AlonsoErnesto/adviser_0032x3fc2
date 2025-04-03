@@ -3,7 +3,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { Input } from '@/components/ui/input'
 import { Search } from 'lucide-react'
-import { Adviser } from '@/types/adviser'
 import { advisers } from '@/data/advisers'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Skeleton } from '@/components/ui/skeleton'
