@@ -18,6 +18,7 @@ import {
   MessageCircle,
   MessageCircleQuestion,
   Settings,
+  User,
 } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
@@ -60,11 +61,18 @@ const ProfileLeftSection = ({ onLoad }: { onLoad?: () => void }) => {
       active: pathname === '/posts',
     },
     {
+      href: '/profile',
+      icon: <User size={20} />,
+      label: 'Perfil',
+      active: pathname.startsWith('/profile'),
+    },
+    {
       href: '/advisers',
       icon: <GraduationCap size={20} />,
       label: 'Asesores',
       active: pathname.startsWith('/advisers'),
     },
+
     {
       href: '/platform',
       icon: <LayoutDashboard size={20} />,
@@ -167,7 +175,10 @@ const ProfileLeftSection = ({ onLoad }: { onLoad?: () => void }) => {
         />
 
         {!isCollapsed && (
-          <div className="overflow-hidden">
+          <div
+            className="cursor-pointer overflow-hidden"
+            onClick={() => (window.location.href = '/profile')}
+          >
             <p className="truncate text-sm font-medium dark:text-white">
               {user.fullName}
             </p>
