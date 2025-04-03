@@ -1,36 +1,31 @@
 import { NextResponse, type NextRequest } from 'next/server'
 import { createMiddlewareClient } from '@/utils/supabase'
+import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
 
-export async function middleware(request: NextRequest) {
-  try {
-    // This `try/catch` block is only here for the interactive tutorial.
-    // Feel free to remove once you have Supabase connected.
-    const { supabase, response } = createMiddlewareClient(request)
+// Definir rutas públicas (accesibles sin autenticación)
+const isPublicRoute = createRouteMatcher(['/sign-in(.*)'])
 
-    // Refresh session if expired - required for Server Components
-    // https://supabase.com/docs/guides/auth/auth-helpers/nextjs#managing-session-with-middleware
-    await supabase.auth.getSession()
+export default clerkMiddleware(async (auth, req) => {
+  const { userId, redirectToSignIn } = await auth()
+  const pathname = req.nextUrl.pathname
 
-    return response
-  } catch (e) {
-    // If you are here, a Supabase client could not be created!
-    // This is likely because you have not set up environment variables.
-    // Check out http://localhost:3000 for Next Steps.
-    return NextResponse.next({
-      request: { headers: request.headers },
-    })
+  // 🔹 Si el usuario está autenticado y trata de entrar a una ruta pública (como /sign-in), redirigir a /posts
+  if (userId && isPublicRoute(req)) {
+    return NextResponse.redirect(new URL('/posts', req.url))
   }
-}
+
+  // 🔹 Si el usuario no está autenticado y trata de entrar a una ruta no pública, redirigir a /sign-in
+  if (!userId && !isPublicRoute(req)) {
+    return NextResponse.redirect(new URL('/sign-in', req.url))
+  }
+
+  // 🔹 Lógica de Supabase (opcional)
+  const { supabase, response } = createMiddlewareClient(req)
+  await supabase.auth.getSession()
+
+  return response
+})
 
 export const config = {
-  matcher: [
-    /*
-     * Match all request paths except for the ones starting with:
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico (favicon file)
-     * Feel free to modify this pattern to include more paths.
-     */
-    '/((?!_next/static|_next/image|favicon.ico).*)',
-  ],
+  matcher: ['/((?!_next/static|_next/image|favicon.ico).*)', '/(api|trpc)(.*)'],
 }

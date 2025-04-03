@@ -39,3 +39,5 @@ yarn-error.log*
 
 # swc
 .swc
+# clerk configuration (can include secrets)
+/.clerk/
