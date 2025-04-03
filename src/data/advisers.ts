@@ -1,5 +1,3 @@
-import type { Adviser } from '@/types/adviser'
-
 export const advisers: Adviser[] = [
   {
     id: 1,
@@ -7,8 +5,10 @@ export const advisers: Adviser[] = [
     gender: 'Masculino',
     avatar: '/api/placeholder/300/300',
     specialty: 'Ingeniería',
+    coverPhoto: '/covers/juan-cover.jpg',
     profession: 'Ingeniero Civil',
     university: 'Universidad Nacional de Ingeniería',
+    email: 'carlos@gmail.com',
     description:
       'Especialista en estructuras con enfoque en construcciones sostenibles y eficiencia energética.',
     experience: 8,
@@ -22,6 +22,7 @@ export const advisers: Adviser[] = [
     specialty: 'Medicina',
     profession: 'Médico Cirujano',
     university: 'Universidad Nacional Mayor de San Marcos',
+    email: 'carlos@gmail.com',
     description:
       'Especializada en neurología pediátrica con enfoque en trastornos del desarrollo.',
     experience: 12,
@@ -39,6 +40,7 @@ export const advisers: Adviser[] = [
       'Enfocado en psicología organizacional y desarrollo de equipos de alto rendimiento.',
     experience: 5,
     location: 'Arequipa',
+    email: 'carlos@gmail.com',
   },
   {
     id: 4,
@@ -52,6 +54,7 @@ export const advisers: Adviser[] = [
       'Desarrolladora full-stack especializada en aplicaciones web y móviles con React y React Native.',
     experience: 7,
     location: 'Lima',
+    email: 'carlos@gmail.com',
   },
   {
     id: 5,
@@ -65,6 +68,7 @@ export const advisers: Adviser[] = [
       'Especialista en odontología estética y reconstructiva con enfoque mínimamente invasivo.',
     experience: 9,
     location: 'Trujillo',
+    email: 'carlos@gmail.com',
   },
   {
     id: 6,
@@ -78,6 +82,7 @@ export const advisers: Adviser[] = [
       'Investigadora en movimientos sociales urbanos y participación ciudadana en Latinoamérica.',
     experience: 11,
     location: 'Cusco',
+    email: 'carlos@gmail.com',
   },
   {
     id: 7,
@@ -91,6 +96,7 @@ export const advisers: Adviser[] = [
       'Consultor en optimización de procesos industriales y automatización con enfoque en Industry 4.0.',
     experience: 15,
     location: 'Piura',
+    email: 'carlos@gmail.com',
   },
   {
     id: 8,
@@ -104,6 +110,7 @@ export const advisers: Adviser[] = [
       'Especializada en cuidados intensivos y manejo de pacientes críticos con patologías complejas.',
     experience: 6,
     location: 'Arequipa',
+    email: 'carlos@gmail.com',
   },
   {
     id: 9,
@@ -117,6 +124,7 @@ export const advisers: Adviser[] = [
       'Especializado en derecho corporativo y litigios comerciales con experiencia en arbitraje internacional.',
     experience: 10,
     location: 'Lima',
+    email: 'carlos@gmail.com',
   },
   {
     id: 10,
@@ -130,6 +138,7 @@ export const advisers: Adviser[] = [
       'Experta en procesos de producción y control de calidad en la industria farmacéutica y cosmética.',
     experience: 14,
     location: 'Cusco',
+    email: 'carlos@gmail.com',
   },
   {
     id: 11,
@@ -143,6 +152,7 @@ export const advisers: Adviser[] = [
       'Especializado en trastornos del estado de ánimo y ansiedad con enfoque en terapia cognitivo-conductual.',
     experience: 8,
     location: 'Cajamarca',
+    email: 'carlos@gmail.com',
   },
   {
     id: 12,
@@ -156,6 +166,7 @@ export const advisers: Adviser[] = [
       'Investigadora en culturas indígenas amazónicas y desarrollo sostenible en comunidades rurales.',
     experience: 7,
     location: 'Iquitos',
+    email: 'carlos@gmail.com',
   },
   {
     id: 13,
@@ -169,6 +180,7 @@ export const advisers: Adviser[] = [
       'Especializado en diseño y mantenimiento de maquinaria industrial y sistemas de refrigeración.',
     experience: 12,
     location: 'Huancayo',
+    email: 'carlos@gmail.com',
   },
   {
     id: 14,
@@ -182,6 +194,7 @@ export const advisers: Adviser[] = [
       'Especializada en neonatología y cuidados intensivos pediátricos con enfoque en lactancia materna.',
     experience: 9,
     location: 'Huánuco',
+    email: 'carlos@gmail.com',
   },
   {
     id: 15,
@@ -195,6 +208,7 @@ export const advisers: Adviser[] = [
       'Analista en políticas públicas y desarrollo económico regional con experiencia en proyectos de inversión.',
     experience: 11,
     location: 'Moquegua',
+    email: 'carlos@gmail.com',
   },
   {
     id: 16,
@@ -208,6 +222,7 @@ export const advisers: Adviser[] = [
       'Experta en gestión de residuos sólidos y evaluación de impacto ambiental en proyectos de infraestructura.',
     experience: 6,
     location: 'Tumbes',
+    email: 'carlos@gmail.com',
   },
   {
     id: 17,
@@ -221,6 +236,7 @@ export const advisers: Adviser[] = [
       'Especializado en cardiología intervencionista y manejo de enfermedades cardiovasculares complejas.',
     experience: 15,
     location: 'Pucallpa',
+    email: 'carlos@gmail.com',
   },
   {
     id: 18,
@@ -234,6 +250,7 @@ export const advisers: Adviser[] = [
       'Especialista en comunicación para el desarrollo y gestión de proyectos de comunicación participativa.',
     experience: 8,
     location: 'Jaén',
+    email: 'carlos@gmail.com',
   },
   {
     id: 19,
@@ -247,6 +264,7 @@ export const advisers: Adviser[] = [
       'Experto en planificación minera y gestión de proyectos de explotación de recursos minerales.',
     experience: 10,
     location: 'Cerro de Pasco',
+    email: 'carlos@gmail.com',
   },
   {
     id: 20,
@@ -260,6 +278,7 @@ export const advisers: Adviser[] = [
       'Especializada en dermatología clínica y estética con enfoque en tratamientos láser y cosméticos.',
     experience: 14,
     location: 'Barranca',
+    email: 'carlos@gmail.com',
   },
   {
     id: 21,
@@ -273,6 +292,7 @@ export const advisers: Adviser[] = [
       'Investigador en historia peruana y latinoamericana con especialización en historia colonial.',
     experience: 7,
     location: 'Lambayeque',
+    email: 'carlos@gmail.com',
   },
   {
     id: 22,
@@ -286,6 +306,7 @@ export const advisers: Adviser[] = [
       'Experta en agricultura sostenible y gestión de recursos naturales con enfoque en agroecología.',
     experience: 12,
     location: 'La Molina',
+    email: 'carlos@gmail.com',
   },
   {
     id: 23,
@@ -299,6 +320,7 @@ export const advisers: Adviser[] = [
       'Especializado en obstetricia de alto riesgo y cirugía ginecológica mínimamente invasiva.',
     experience: 9,
     location: 'Lima',
+    email: 'carlos@gmail.com',
   },
   {
     id: 24,
@@ -312,6 +334,7 @@ export const advisers: Adviser[] = [
       'Analista en políticas públicas y gestión gubernamental con experiencia en descentralización y participación ciudadana.',
     experience: 11,
     location: 'Callao',
+    email: 'carlos@gmail.com',
   },
   {
     id: 25,
@@ -325,6 +348,7 @@ export const advisers: Adviser[] = [
       'Especializado en sistemas de control y automatización industrial con experiencia en robótica y mecatrónica.',
     experience: 6,
     location: 'Ayacucho',
+    email: 'carlos@gmail.com',
   },
   {
     id: 26,
@@ -338,6 +362,7 @@ export const advisers: Adviser[] = [
       'Especializada en cirugía de catarata y glaucoma con enfoque en tratamientos láser y lentes intraoculares.',
     experience: 15,
     location: 'Juliaca',
+    email: 'carlos@gmail.com',
   },
   {
     id: 27,
@@ -351,6 +376,7 @@ export const advisers: Adviser[] = [
       'Investigador en geografía humana y desarrollo regional con especialización en ordenamiento territorial.',
     experience: 8,
     location: 'Puno',
+    email: 'carlos@gmail.com',
   },
   {
     id: 28,
@@ -364,6 +390,7 @@ export const advisers: Adviser[] = [
       'Experta en acuicultura y gestión de recursos pesqueros con enfoque en desarrollo sostenible.',
     experience: 10,
     location: 'Andahuaylas',
+    email: 'carlos@gmail.com',
   },
   {
     id: 29,
@@ -377,6 +404,7 @@ export const advisers: Adviser[] = [
       'Especializado en enfermedades respiratorias crónicas y manejo de pacientes con ventilación mecánica.',
     experience: 14,
     location: 'Cañete',
+    email: 'carlos@gmail.com',
   },
   {
     id: 30,
@@ -390,6 +418,7 @@ export const advisers: Adviser[] = [
       'Investigadora en filosofía política y ética con especialización en derechos humanos y justicia social.',
     experience: 7,
     location: 'Chachapoyas',
+    email: 'carlos@gmail.com',
   },
   {
     id: 31,
@@ -403,6 +432,7 @@ export const advisers: Adviser[] = [
       'Especializado en desarrollo de software y gestión de proyectos tecnológicos con experiencia en metodologías ágiles.',
     experience: 12,
     location: 'Barranca',
+    email: 'carlos@gmail.com',
   },
   {
     id: 32,
@@ -416,6 +446,7 @@ export const advisers: Adviser[] = [
       'Especializada en enfermedades autoinmunes y manejo de pacientes con artritis reumatoide y lupus.',
     experience: 9,
     location: 'Trujillo',
+    email: 'carlos@gmail.com',
   },
   {
     id: 33,
@@ -429,6 +460,7 @@ export const advisers: Adviser[] = [
       'Investigador en lenguas indígenas y políticas lingüísticas con especialización en revitalización lingüística.',
     experience: 11,
     location: 'Lima',
+    email: 'carlos@gmail.com',
   },
   {
     id: 34,
@@ -442,6 +474,7 @@ export const advisers: Adviser[] = [
       'Especializada en redes de comunicación y sistemas de transmisión con experiencia en fibra óptica y 5G.',
     experience: 6,
     location: 'Lima',
+    email: 'carlos@gmail.com',
   },
   {
     id: 35,
@@ -455,6 +488,7 @@ export const advisers: Adviser[] = [
       'Especializado en cirugía laparoscópica y manejo de pacientes con cáncer de próstata y cálculos renales.',
     experience: 15,
     location: 'Arequipa',
+    email: 'carlos@gmail.com',
   },
   {
     id: 36,
@@ -468,6 +502,7 @@ export const advisers: Adviser[] = [
       'Investigadora en culturas prehispánicas y gestión del patrimonio cultural con especialización en arqueología andina.',
     experience: 8,
     location: 'Cusco',
+    email: 'carlos@gmail.com',
   },
   {
     id: 37,
@@ -481,6 +516,7 @@ export const advisers: Adviser[] = [
       'Especializado en desarrollo de materiales avanzados y nanotecnología con experiencia en biomateriales y polímeros.',
     experience: 10,
     location: 'Cajamarca',
+    email: 'carlos@gmail.com',
   },
   {
     id: 38,
@@ -494,6 +530,7 @@ export const advisers: Adviser[] = [
       'Especializada en diabetes y trastornos metabólicos con enfoque en terapia hormonal y nutricional.',
     experience: 14,
     location: 'Iquitos',
+    email: 'carlos@gmail.com',
   },
   {
     id: 39,
@@ -507,6 +544,7 @@ export const advisers: Adviser[] = [
       'Investigador en dinámicas poblacionales y planificación familiar con especialización en migraciones y salud reproductiva.',
     experience: 7,
     location: 'Huancayo',
+    email: 'carlos@gmail.com',
   },
   {
     id: 40,
@@ -520,6 +558,7 @@ export const advisers: Adviser[] = [
       'Experta en geotecnia y riesgos geológicos con experiencia en exploración de recursos hídricos y mineros.',
     experience: 12,
     location: 'Huánuco',
+    email: 'carlos@gmail.com',
   },
   {
     id: 41,
@@ -533,6 +572,7 @@ export const advisers: Adviser[] = [
       'Especializado en cirugía reconstructiva y estética con enfoque en quemaduras y malformaciones congénitas.',
     experience: 9,
     location: 'Moquegua',
+    email: 'carlos@gmail.com',
   },
   {
     id: 42,
@@ -546,6 +586,7 @@ export const advisers: Adviser[] = [
       'Especialista en periodismo de investigación y comunicación política con experiencia en medios digitales.',
     experience: 11,
     location: 'Tumbes',
+    email: 'carlos@gmail.com',
   },
   {
     id: 43,
@@ -559,6 +600,7 @@ export const advisers: Adviser[] = [
       'Especializado en diseño y construcción de embarcaciones con experiencia en sistemas de propulsión y navegación.',
     experience: 6,
     location: 'Pucallpa',
+    email: 'carlos@gmail.com',
   },
   {
     id: 44,
@@ -572,6 +614,7 @@ export const advisers: Adviser[] = [
       'Especializada en anestesia regional y manejo del dolor postoperatorio con enfoque en seguridad del paciente.',
     experience: 15,
     location: 'Jaén',
+    email: 'carlos@gmail.com',
   },
   {
     id: 45,
@@ -585,6 +628,7 @@ export const advisers: Adviser[] = [
       'Especialista en gestión de información y bibliotecas digitales con experiencia en preservación del patrimonio documental.',
     experience: 8,
     location: 'Cerro de Pasco',
+    email: 'carlos@gmail.com',
   },
   {
     id: 46,
@@ -598,6 +642,7 @@ export const advisers: Adviser[] = [
       'Experta en tecnología de alimentos y control de calidad con experiencia en desarrollo de productos innovadores.',
     experience: 10,
     location: 'Barranca',
+    email: 'carlos@gmail.com',
   },
   {
     id: 47,
@@ -611,6 +656,7 @@ export const advisers: Adviser[] = [
       'Especializado en diagnóstico por imágenes y resonancia magnética con enfoque en detección temprana de enfermedades.',
     experience: 14,
     location: 'Lambayeque',
+    email: 'carlos@gmail.com',
   },
   {
     id: 48,
@@ -624,6 +670,7 @@ export const advisers: Adviser[] = [
       'Especialista en pedagogía y diseño curricular con experiencia en educación inclusiva y formación docente.',
     experience: 7,
     location: 'La Molina',
+    email: 'carlos@gmail.com',
   },
   {
     id: 49,
@@ -637,6 +684,7 @@ export const advisers: Adviser[] = [
       'Especializado en análisis de datos y modelado estadístico con experiencia en investigación de mercados y encuestas.',
     experience: 12,
     location: 'Lima',
+    email: 'carlos@gmail.com',
   },
   {
     id: 50,
@@ -650,5 +698,6 @@ export const advisers: Adviser[] = [
       'Especializada en trastornos de la coagulación y manejo de pacientes con leucemia y linfoma.',
     experience: 9,
     location: 'Callao',
+    email: 'carlos@gmail.com',
   },
 ]

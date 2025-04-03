@@ -17,12 +17,16 @@ import {
   MessageCircleQuestion,
   Settings,
 } from 'lucide-react'
+import { useEffect } from 'react'
 
-const ProfileLeftSection = () => {
+const ProfileLeftSection = ({ onLoad }: { onLoad?: () => void }) => {
   const { user } = useUser()
 
   if (!user) return null
-
+  useEffect(() => {
+    // Simula la carga de datos o lo que necesites
+    onLoad?.()
+  }, [onLoad])
   return (
     <div className="flex h-[100dvh] w-full flex-col  pb-3 pt-5">
       <div className="grow-2 flex items-center gap-3">
