@@ -11,22 +11,22 @@ export default function MainLayout({
   const [leftSectionLoaded, setLeftSectionLoaded] = useState(false)
 
   return (
-    <div className="w-full">
-      <div className="flex min-h-screen">
-        <div className="sticky top-0 h-screen overflow-y-auto pl-[3%]">
-          <ProfileLeftSection onLoad={() => setLeftSectionLoaded(true)} />
-        </div>
-
-        {leftSectionLoaded ? (
-          <div className="flex-1 overflow-y-auto">
-            <div className="mx-auto max-w-5xl py-10">{children}</div>
-          </div>
-        ) : (
-          <div className="flex flex-1 items-center justify-center">
-            <Spinner className="h-12 w-12" />
-          </div>
-        )}
+    <div className="flex h-screen w-full overflow-hidden">
+      {' '}
+      <div className="sticky top-0 h-full">
+        {' '}
+        <ProfileLeftSection onLoad={() => setLeftSectionLoaded(true)} />
       </div>
+      {leftSectionLoaded ? (
+        <div className="flex-1 overflow-y-auto">
+          {' '}
+          <div className="mx-auto max-w-5xl px-4 py-10">{children}</div>
+        </div>
+      ) : (
+        <div className="flex flex-1 items-center justify-center">
+          <Spinner className="h-12 w-12" />
+        </div>
+      )}
     </div>
   )
 }
